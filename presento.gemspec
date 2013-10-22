@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Presento::VERSION
   spec.authors       = ["kwando"]
   spec.email         = ["kwando@merciless.me"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{A barebones presenter library for ActiveModels}
+  spec.summary       = %q{A barebones presenter library for ActiveModels}
   spec.homepage      = ""
   spec.license       = "MIT"
 
