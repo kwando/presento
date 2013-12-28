@@ -20,16 +20,22 @@ Or install it yourself as:
 
 Specify presento in your Gemfile and then you can create your presenters as
 
-````
+````ruby
 class MyPresenter > Presento::Base
   def awesome_method
     42
   end
 end
 
-Usage:
+# Usage:
 
 MyPresenter.present(my_object) do |my_object|
+  # in this context my_object will be presented with an instance of MyPresenter
+  my_object.awesome_method
+end
+
+# It works with enumerables to
+MyPresenter.present_each(my_objects) do |my_object|
   # in this context my_object will be presented with an instance of MyPresenter
   my_object.awesome_method
 end
